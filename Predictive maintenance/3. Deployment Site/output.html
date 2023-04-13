@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Include Tailwind CSS framework -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+  <title>Predictive Maintenance</title>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <header class="">
+        <div class=" items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+            <span class="ml-3 flex justify-center items-center h-full text-2xl pt-4">Predictive Maintenance</span>
+          </a>
+          <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+          </div>
+        </div>
+      </header>
+
+  <div class="-col justify-center mb-20 py-3 sm:px-6 lg:px-8">
+    <div class="bg-white shadow-sm sm:rounded-lg mb-20">
+      <div class="px-6 py-8">
+        <div class="font-bold text-gray-800 text-3xl mb-4 text-center">Output</div>
+        <div class="text-gray-700 text-lg mb-6 text-center">
+          {% if output_text == "in exception": %}
+          <p style="color:red;">Invalid Input</p>
+            {% else %}
+          <p>{{output_text}}</p>
+          {% endif %}
+          <p>{{error}}</p>
+        </div>
+        <div class="flex justify-center mb-10">
+          <a href="{{ url_for('home') }}" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full transition-colors duration-200">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class=" bg-gray-300 static bottom ">
+    <div class="container px-4 py-3 mx-auto flex items-center sm:flex-row">
+      <a class=" title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <span class="ml-3 text-xl">Predictive Maintenance</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-6 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0">© 2023 Team Data —
+        <a class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Sakib, Smit, Sameer</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
+

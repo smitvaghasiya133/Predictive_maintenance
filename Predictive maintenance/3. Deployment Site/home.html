@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<title>Predictive Maintenance</title>
+<head>
+    <link href=https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css rel="stylesheet">
+    <script src=https://cdn.tailwindcss.com></script>
+    <script>
+      window.onload = function() {
+        document.body.style.overflow = 'hidden';
+      }
+    </script>
+    <style>
+      header {
+        text-align: center;
+      }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen overflow-visible ...">
+  <header class="">
+    <div class=" items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+        <span class="ml-3 flex justify-center items-center h-full text-2xl pt-4">Predictive Maintenance</span>
+      </a>
+      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+      </div>
+    </div>
+  </header>
+  
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-20 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="text-2xl text-indigo-500 tracking-widest  font-medium title-font mb-1">Introduction</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">The project aims to create a predictive maintenance model that can forecast when a machine is likely to fail based on sensors data. Predictive maintenance uses volt, pressure, rotation, and vibration data from sensors to assess and forecast failures before they happen. Predictive maintenance helps us to avoids reactive maintenance, without incurring costs associated with doing too much preventive maintenance. Industrial use case of this model is to decreases planned maintenance, decrease service cost and to increase the assets availability and lifetime. </p>
+    </div>
+    <div class="flex justify-center">
+      <a href="{{ url_for('model_page') }}" >
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">Lets Get Started !!!</button>
+    </div>
+  </a>
+  </div>
+</section>
+
+<footer class="w-full bg-gray-300 static bottom ">
+  <div class="container px-4 py-2 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <span class="ml-3 text-xl">Predictive Maintenance</span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-6 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Team Data —
+      <a class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Sakib,Smit,Sameer</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

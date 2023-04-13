@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<title>Predictive Maintenance</title>
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header class="">
+    <div class=" items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+        <span class="ml-3 flex justify-center items-center h-full text-2xl pt-4">Predictive Maintenance</span>
+      </a>
+      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+      </div>
+    </div>
+  </header>
+
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 mx-auto">
+    <div class="flex flex-col text-center w-full">
+      <h2 class="text-xs2 text-indigo-500 tracking-widest font-medium title-font mb-1">Welcome</h2>
+    </div>
+
+    <form method="POST" class="mx-auto max-w-md">
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 w-full">
+          <label for="machineID" class="text-sm font-large text-gray-700">Machine ID:</label>
+          <input type="text" id="machineID" name="machineID" class="w-full px-4 py-2 mt-2 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+        </div>
+        <div class="p-2 w-full">
+          <label for="volt" class="text-sm font-large text-gray-700">Volt:</label>
+          <input type="text" id="volt" name="volt" class="w-full px-4 py-2 mt-2 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+        </div>
+        <div class="p-2 w-full">
+          <label for="rotate" class="text-sm font-large text-gray-700">Rotate:</label>
+          <input type="text" id="rotate" name="rotate" class="w-full px-4 py-2 mt-2 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+        </div>
+        <div class="p-2 w-full">
+          <label for="pressure" class="text-sm font-large text-gray-700">Pressure:</label>
+          <input type="text" id="pressure" name="pressure" class="w-full px-4 py-2 mt-2 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+        </div>
+        <div class="p-2 w-full">
+          <label for="vibration" class="text-sm font-large text-gray-700">Vibration:</label>
+          <input type="text" id="vibration" name="vibration" class="w-full px-4 py-2 mt-2 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+        </div>
+        <div class="p-2 w-full">
+          <label for="date_year" class="text-sm font-large text-gray-700">Year:</label>
+          <input type="text" id="date_year" name="date_year" class="w-full px-4 py-2 mt-2 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+        </div>
+        <div class="p-2 w-full">
+          <label for="date_month" class="text-sm font-large text-gray-700">Month:</label>
+          <input type="text" id="date_month" name="date_month" class="w-full px-4 py-2 mt-2 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+        </div>
+        <div class="p-2 w-full">
+          <label for="date_day" class="text-sm font-large text-gray-700">Day:</label>
+          <input type="text" id="date_day" name="date_day" class="w-full px-4 py-2 mt-2 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+        </div>
+        <div class="p-2 w-full">
+          <label for="age" class="text-sm font-large text-gray-700">Age:</label>
+          <input type="text" id="age" name="age" class="w-full px-4 py-2 mt-2 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+        </div>
+        <div class="p-2 w-full">
+          <label for="time_hour" class="text-sm font-large text-gray-700">Hour:</label>
+          <input type="text" id="time_hour" name="time_hour" class="w-full px-4 py-2 mt-2 text-gray-700 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+        </div>
+        <div class="text-sm font-large text-gray-700 py-2">
+          <p>Please Select Any One Model : </p>
+        </div>
+        <div class="flex items-center gap-4">
+          <label for="model_model1" class="inline-flex items-center">
+            <input type="checkbox" id="model_model1" name="model_model1" value="1" class="form-checkbox h-5 w-6 text-blue-600"><span class="ml-2 text-gray-700">Model 1</span>
+          </label>
+        
+          <label for="model_model2" class="inline-flex items-center">
+            <input type="checkbox" id="model_model2" name="model_model2" value="1" class="form-checkbox h-5 w-6 text-blue-600"><span class="ml-2 text-gray-700">Model 2</span>
+          </label>
+        
+          <label for="model_model3" class="inline-flex items-center">
+            <input type="checkbox" id="model_model3" name="model_model3" value="1" class="form-checkbox h-5 w-6 text-blue-600"><span class="ml-2 text-gray-700">Model 3</span>
+          </label>
+        
+          <label for="model_model4" class="inline-flex items-center">
+            <input type="checkbox" id="model_model4" name="model_model4" value="1" class="form-checkbox h-5 w-6 text-blue-600"><span class="ml-2 text-gray-700">Model 4</span>
+          </label>
+        </div>
+        
+        <button type ="submit" value="Submit" class="flex mx-auto mt-10 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Predict </button>
+    </form>
+  </div>
+</section>
+
+
+<footer class="w-full mt-10 bg-gray-300 static bottom ">
+  <div class="container px-4 py-3 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <span class="ml-3 text-xl">Predictive Maintenance</span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-6 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Team Data —
+      <a class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Sakib,Smit,Sameer</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
